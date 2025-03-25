@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #BEA574;
+    height: 70px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    font-size: 16px;
+}
+
+header img {
+    width: 100px; 
+    display: block;
+    margin-left: 40%;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    margin-right: 30%;
+    justify-content: space-between;
+}
+
+nav {
+  margin-right: 120px;
+  width: 40%;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HEADER_SCROLL */
+
+
+
+
+/* HUMBURGER_MENU */
+
+  .hamburger-menu {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: none;
+    background: transparent;
+    appearance: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .hamburger-menu__bar {
+    display: inline-block;
+    width: 60%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+    margin-right: 20px;
+  }
+
+  .hamburger-menu__bar:first-child {
+    top: 16px;
+  }
+
+  .hamburger-menu__bar:nth-child(2) {
+    top: 24px;
+  }
+  
+  .hamburger-menu__bar:last-child {
+    top: 32px;
+  }
+
+  .hamburger-menu--open .hamburger-menu__bar {
+    top: 50%;
+  }
+
+  .hamburger-menu--open .hamburger-menu__bar:first-child {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+
+  .hamburger-menu--open .hamburger-menu__bar:last-child {
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  }
+
+  .hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+    background: #BEA574;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .navigation__list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation__list-item {
+    border-bottom: solid 1px white;
+  }
+
+  .navigation__list-item:first-child {
+    border-top: solid 1px white;
+  }
+
+  .navigation__link {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    padding: 24px 0;
+    transition: .5s;
+  }
+
+
+
+/* SWIPER */
+
+  .swiper {
+    width: 100%;
+    height: 500px;
+    /* margin: 0 auto; */
+}
+
+.swiper-card{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #FFF;    
+    /* z-index: 9999; */
+}
+
+.swiper-card-img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* z-index: 9999; */
+}
+
+
+/* CatchCopy  */
+
+.title {
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.CatchCopy {
+  height: 100px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.CatchCopy span {
+  color: red;
+  font-size: 60px;
+
+}
+
+
+/* Schedule */
+
+.Schedule {
+  height: 250px;
+  text-align: center;
+
+}
+
+.Schedule_description {
+width: 80%;
+margin: 0 auto;
+margin-bottom: 50px;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+display: flex;
+justify-content: center;
+border-bottom: 3px solid #BEA574;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule_tab {
+flex: 1;
+padding: 10px;
+text-align: center;
+cursor: pointer;
+border-right: 1px solid #ddd;
+background-color: gainsboro;
+font-weight: bold;
+color: gray;
+}
+
+.schedule_content {
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule_tab:last-child {
+border-right: none;
+}
+
+.schedule_tab.active {
+background-color: #fff;
+font-weight: bold;
+}
+
+.schedule_content {
+display:block;
+padding: 10px;
+}
+
+.schedule_text {
+  display: none;
+}
+
+.schedule_text.active {
+  display:block;
+}
+
+
+.schedule_tab.active{
+  background-color: #BEA574;
+  color: white;
+  font-weight: bold;
+}
+
+.blank {
+  height: 30px;
+}
+
+
+/* Access */
+
+.Access {
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.Access p {
+  padding: 10px;
+}
+
+/* FORM */
+
+.contact {
+  max-width: 400px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.form_content {
+  margin: 10px 0px;
+}
+
+.form_content_name {
+  text-align: left;
+}
+
+.form_write {
+  width: 100%;
+  height: 30px
+}
+
+select {
+  height: 30px
+}
+
+.form_submit {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.submit_botton {
+  height: 40px;
+  background: #BEA574;
+  color: white;
+  border: gray;
+}
+
+form span {
+  color: red;
+  font-size: 8px;
+}
+
+.map {
+  width:80%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.form {
+  width:80%;
+  margin: 0 auto;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  margin-top: 40px;
+  margin: auto auto;
+  display: flex;
+  background-color: #BEA574;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  justify-content: center;
+}
+
+footer img {
+  width: 100px; 
+}
+
+
+
+/* confirm.php */
+
+
+.form_confirm {
+  width: 60%;
+  margin: 30px auto 10px auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.confirm-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.confirm-table th, .confirm-table td {
+  padding: 24px;
+  text-align: left;
+}
+
+.confirm-table th {
+  width: 35%;
+}
+
+.confirm_button {
+  display: flex;
+  justify-content: center;
+  gap: 25%;
+  margin-bottom: 30px;
+}
+
+.back-button, .send-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button {
+  background-color: #ddd;
+  color: #333;
+}
+
+.send-button {
+  background-color: #c4a77d;
+  color: white;
+}
+
+
+/* thanks.php */
+
+.thanks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.thanks_message {
+  width: 200%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 650px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav ul {
+    display: none;
+  }
+}
+
+
