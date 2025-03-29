@@ -24,9 +24,13 @@
         </div>
     </div>
 
+<!-- navigation -->
+    <div class="swiper-pagination"></div>
+
 <!-- navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
+
 </div>
 
 <!-- CATCHCOPY -->

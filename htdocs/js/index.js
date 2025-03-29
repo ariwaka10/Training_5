@@ -89,15 +89,18 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 20, // スライド間の距離
   centeredSlides: true, // アクティブなスライドを中央にする
 
+  pagination: {
+    el: '.swiper-pagination',
+  }, 
+
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   }
 
+
 });
-
-
 
 
 
